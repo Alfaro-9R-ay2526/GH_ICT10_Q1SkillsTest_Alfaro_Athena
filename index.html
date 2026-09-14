@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkillsTest</title>
+    <link rel="stylesheet" href="https://pyscript.net/releases/2026.7.3/core.css" />
+    <script type="module" src="https://pyscript.net/releases/2026.7.3/core.js"></script>
+</head>
+<body>
+    <h1>AlfaCafe</h1>
+        <form>
+            <!--MENU-->
+            <input type="checkbox" id="Menu1" value="150">
+                <label for="Drink1">Iced Choco-150</label><br>
+            <input type="checkbox" id="Menu2" value="200">
+                <label for="Drink2">Strawberry Latte-200</label><br>
+            <input type="checkbox" id="Menu3"  value="250">
+                <label for="Food1">Strawberry Cake-250</label><br>
+            <input type="checkbox" id="Menu4"  value="70">
+                <label for="Food2">Chocolate chip cookie-70</label><br><br>
+
+            <!-- Buttons that trigger the PyScript functions -->
+            <input type="button" py-click="create_order" value="Receipt">
+        </form>
+        <div id="result" style="background-color: white; color: black; font-size: 35px;"> Receipt:</div>
+        <py-script src="main.py"></py-script>
+</body>
+</html>
